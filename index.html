@@ -9,7 +9,10 @@
     <!-- Core theme CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;469;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 </head>
 <body>
     <!-- Pre-loader -->
@@ -17,6 +20,58 @@
         <div id="intro-loader"></div>
     </div>
     <!-- End Pre-loader -->
+    <!-- Nav Bar -->
+    <div class="navbar navbar-transparent fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand"><img src="assets/img/logo.png" alt="logo Vu Minh Hung"></a>
+            </div>
+            <nav id="my-nav" class="navbar-collapse collapse" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Works</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#experience">Resume</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- End Nav Bar -->
+    <!-- Home section -->
+    <section id="home">
+        <div class="home-bg-container">
+            <div class="home-bg">
+                <ul>
+                    <li class="home-bg-slide active-slide">
+                        <div class="home-bg-desc text-center">
+                            <div class="home-bg-desc-small">Welcome to my site</div>
+                            <div class="home-bg-desc-large">Vu Minh Hung</div>
+                        </div>
+                    </li>
+                    <li class="home-bg-slide">
+                        <div class="home-bg-desc text-center">
+                            <div class="home-bg-desc-small">Creative - Professional - Passionate</div>
+                            <div class="home-bg-desc-large">Frontend Developer</div>
+                        </div>
+                    </li>
+                </ul>    
+            </div>
+            <div class="slide-buttons">
+                <div class="slide-nav prev-button"><i class="fas fa-chevron-left"></i></div>
+                <div class="slide-nav next-button"><i class="fas fa-chevron-right"></i></div>
+            </div>
+        </div>
+    </section>
+    <!-- End Home section -->
 
     <!-- Google hosted library Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

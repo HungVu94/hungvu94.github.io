@@ -481,6 +481,13 @@ li.home-bg-slide:last-child{background-image: url(../assets/img/slide2.jpg);}
     line-height: 46px;
 }
 }
+@media (min-width: 1280px){
+.home-bg-desc-small {
+    padding: 4px 18px;
+    font-size: 29px;
+    line-height: 46px;
+}
+}
 .home-bg-desc-large{
     padding: 4px 18px;
     font-family: 'Oswald', helvetica, arial, sans-serif;
@@ -529,6 +536,14 @@ li.home-bg-slide:last-child{background-image: url(../assets/img/slide2.jpg);}
 .home-bg-desc-large {
     padding: 4px 18px;
     font-size: 45px;
+    line-height: 86px;
+    letter-spacing: -2px;
+}
+}
+@media (min-width: 1280px){
+.home-bg-desc-large {
+    padding: 4px 18px;
+    font-size: 71px;
     line-height: 86px;
     letter-spacing: -2px;
 }

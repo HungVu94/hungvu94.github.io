@@ -400,7 +400,14 @@ li.home-bg-slide:last-child{background-image: url(../assets/img/slide2.jpg);}
     width: 100%;
     height: auto;
     transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
     z-index: 2;
+}
+.home-bg:hover + .slide-buttons{
+    opacity: 1;
+    visibility: visible;
 }
 .slide-buttons .slide-nav{
     margin: 0 30px;
@@ -446,6 +453,34 @@ li.home-bg-slide:last-child{background-image: url(../assets/img/slide2.jpg);}
     transform: translateY(-50px);
     transition: 0.4s;
 }
+@media (min-width: 320px){
+.home-bg-desc-small {
+    padding: 0;
+    font-size: 7px;
+    line-height: 14px;
+}
+}
+@media (min-width: 360px){
+.home-bg-desc-small {
+    padding: 0;
+    font-size: 8px;
+    line-height: 16px;
+}
+}
+@media (min-width: 411px){
+.home-bg-desc-small {
+    padding: 0;
+    font-size: 9px;
+    line-height: 18px;
+}
+}
+@media (min-width: 768px){
+.home-bg-desc-small {
+    padding: 4px 18px;
+    font-size: 18px;
+    line-height: 46px;
+}
+}
 .home-bg-desc-large{
     padding: 4px 18px;
     font-family: 'Oswald', helvetica, arial, sans-serif;
@@ -457,6 +492,46 @@ li.home-bg-slide:last-child{background-image: url(../assets/img/slide2.jpg);}
     opacity: 0;
     transform: translateY(50px);
     transition: 0.4s;
+}
+@media (min-width: 320px){
+.home-bg-desc-large {
+    padding: 1px 5px;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: -1px;
+}
+}
+@media (min-width: 360px){
+.home-bg-desc-large {
+    padding: 1px 6px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -1px;
+}
+}
+@media (min-width: 375px){
+.home-bg-desc-large {
+    padding: 1px 6px;
+    font-size: 20px;
+    line-height: 31px;
+    letter-spacing: -1px;
+}
+}
+@media (min-width: 411px){
+.home-bg-desc-large {
+    padding: 1px 7px;
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: -1px;
+}
+}
+@media (min-width: 768px){
+.home-bg-desc-large {
+    padding: 4px 18px;
+    font-size: 45px;
+    line-height: 86px;
+    letter-spacing: -2px;
+}
 }
 .active-slide  .home-bg-desc-small, .active-slide  .home-bg-desc-large{
     visibility: visible;

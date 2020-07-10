@@ -817,3 +817,96 @@ strong {
     transform: scale(1);
 }
 /* End Work Section */
+/* skill section */
+.bg2 {
+    background-color: #EFEFEF;
+}
+.skillBar {
+    margin-top: 40px;
+    text-align: left !important;
+}
+.skillBar li .skillBg {
+    background: none repeat scroll 0 0 #CCCCCC;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.skillBar li span {
+    position: relative;
+    display: block;
+    height: 36px;
+    width: 0;
+    overflow: visible !important;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #474D5D;
+}
+.skillBar li span strong {
+    color: #FFFFFF;
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    line-height: 12px !important;
+    white-space: nowrap;
+}
+/* end skill section */
+/* Downloadable Resume */
+.fullwidth-section {
+    padding: 80px 0px;
+}
+.fullwidth-section h1{
+    display: block;
+    font-family: 'Oswald', helvetica, arial, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0;
+    text-transform: none;
+}
+.bg-callout {
+    background-color: #474D5D !important;
+    color: #fff;
+}
+.killMargin {
+    margin: 0px;
+}
+.padBottom {
+    padding-bottom: 15px;
+}
+.fullwidth-section a.btn {
+    display: inline-block;
+    margin: 20px 7px 0px 7px;
+}
+.btn-trans.btn-border-w {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+.btn-trans.btn-large {
+    font-size: 16px;
+    padding: 10px 24px;
+}
+.btn-trans, a.btn-trans {
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background 0.25s ease-in-out 0s;
+}
+.btn-trans.btn-border-w:hover, .btn-trans.btn-border-w:focus {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.fullwidth-section .btn-primary {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+.fullwidth-section .btn{
+    border-radius: 0;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #3071a9;
+    border-color: #285e8e;
+}
+/* End Downloadable Resume */

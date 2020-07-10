@@ -154,4 +154,37 @@ $(document).ready(function () {
         var category = $(this).data('cat');
         $("#portfolio-items").isotope({ filter : "." + category });
     });
+    // Circliful
+    $(window).scroll(viewChart);
+    var viewed_chart = false;
+    function viewChart (){
+        if (scrolledIntoView($(".chart")) && !viewed_chart){
+            viewed_chart = true;
+            $(".chart").each(function(){
+                var chart_percent = $(this).data('percent');
+                $(this).circliful({
+                    animationStep: 5,
+                    foregroundBorderWidth: 5,
+                    backgroundBorderWidth: 15,
+                    foregroundColor: '#474d5d',
+                    backgroundColor: '#f9f9f9',
+                    foregroundBorderWidth: 20,
+                    backgroundBorderWidth: 20,
+                    percent: chart_percent
+                });
+            });
+        }
+    };
+    // Progress bar
+    $(window).scroll(viewBarChart);
+    var viewed_bar = false;
+    function viewBarChart (){
+        if (scrolledIntoView($(".skillBar")) && !viewed_bar){
+            viewed_bar = true;
+            $(".skillBar span").each(function(){
+                var chart_percent = $(this).data('width');
+                $(this).animate({width : chart_percent},600, "swing");
+            });
+        }
+    };
 });

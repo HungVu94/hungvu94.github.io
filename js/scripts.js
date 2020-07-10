@@ -142,4 +142,16 @@ $(document).ready(function () {
             });
         }
     }
+    // isotope
+    $("#portfolio-items").isotope({
+        itemSelector : 'article',
+        layoutMode: 'fitRows'                                                
+    });
+    $("ul.portfolio-filter-list a").click(function (){
+        event.preventDefault();
+        $("ul.portfolio-filter-list a").removeClass('active');
+        $(this).addClass('active');
+        var category = $(this).data('cat');
+        $("#portfolio-items").isotope({ filter : "." + category });
+    });
 });

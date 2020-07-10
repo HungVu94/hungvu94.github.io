@@ -1,0 +1,756 @@
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #2f3238;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+/* navigation */
+.navigation{
+    margin: 0 auto;
+    padding: 64px 16px;
+    text-align: center;
+    clear: both;
+}
+.navigation h1{font-weight: 800;
+    font-size: 64px;
+    line-height: 1.3;}
+.navigation h1 > span{
+    display: block;
+    padding: 0 0 0.6em 0.1em;
+    color: #74777b;
+    font-weight: 300;
+    font-size: 45%;
+}
+a.set{
+    display: inline-block;
+    color: #3498db;
+    text-decoration: none;
+    margin: 16px 5px 0;
+    padding: 16px 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+a.set:hover, .current_set{
+    background: #3c414a;
+    color: #fff!important;
+}
+/* content */
+.content{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.content > h2:first-child{
+    padding-top: 0;
+}
+.content > h2{
+    clear: both;
+    margin: 0;
+    padding: 64px 1% 0;
+    color: #484B54;
+    font-weight: 800;
+    font-size: 24px;
+}
+.content .grid{
+    position: relative;
+    margin: 0 auto;
+    padding: 16px 0 64px;
+    max-width: 1000px;
+    text-align: center;
+}
+.content .grid .effect{
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    width: 48%;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+}
+.content .grid .effect img{
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+}
+.content .grid .effect .caption{
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 50%;
+    padding: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: left;
+}
+.content .grid .effect .caption h2{
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+.content .grid .effect .caption h2 span{
+    font-weight: 800;
+}
+.content .grid .effect .caption p{
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+/* effect */
+/* Julia */
+.Julia_effect{background: #2f3238!important;}
+.Julia_effect .caption_Julia{height: 100%!important;}
+.Julia_effect > img{
+    max-width: none!important;
+    height: 400px;
+    opacity: 0.8;
+    transition: all 0.35s;
+}
+.Julia_effect:hover > img{
+    opacity: 0.4;
+    transform: scale3d(1.1,1.1,1.1);
+}
+.Julia_effect .caption_Julia h2{
+    padding: 15px 0;
+}
+.Julia_effect .caption_Julia p{
+    display: inline-block;
+    margin: 0 0 3.75px;
+    padding: 6px 15px;
+    background: rgba(255,255,255,0.9);
+    color: #2f3238;
+    transform: translate3d(-360px,0,0);
+    opacity: 0;
+    transition: 0.35s;
+}
+.Julia_effect:hover .caption_Julia p{
+    transform: translate3d(0,0,0);
+    opacity: 1;
+}
+.Julia_effect:hover .caption_Julia p:nth-of-type(3){transition-delay: 0.15s;}
+.Julia_effect:hover .caption_Julia p:nth-of-type(2){transition-delay: 0.1s;}
+.Julia_effect:hover .caption_Julia p:nth-of-type(1){transition-delay: 0.05s;}
+/* Goliath */
+.Goliath_effect{background: #df4e4e!important;}
+.Goliath_effect .caption_Goliath{height: 100%!important;}
+.Goliath_effect > img{
+    opacity: 0.8;
+    transition: 0.35s;
+}
+.Goliath_effect:hover > img{transform: translate3d(0,-80px,0);}
+.Goliath_effect .caption_Goliath h2{
+    position: absolute;
+    bottom: 0; left: 0;
+    padding: 30px;
+    width: 100%;
+    color: white;
+    transition: 0.35s;
+}
+.Goliath_effect:hover .caption_Goliath h2{transform: translate3d(0,-100px,0);}
+.Goliath_effect .caption_Goliath p{
+    position: absolute;
+    bottom: 0; left: 0;
+    padding: 30px;
+    width: 100%;
+    font-size: 90%;
+    text-transform: none;
+    opacity: 0;
+    transition: all 0.35s;
+    transform: translate3d(0,50px,0);
+}
+.Goliath_effect:hover .caption_Goliath p{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+/* Hera */
+.Hera_effect{
+    background: #303fa9!important;
+    height: 100%!important;
+    text-align: center;
+}
+.Hera_effect > img{opacity: 0.8;}
+.Hera_effect .caption_Hera{height: 100%!important;}
+.Hera_effect .caption_Hera::before{
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 200px; height: 200px;
+    border: 2px solid #fff;
+    opacity: 0;
+    transform: translate(-50%,-50%) rotate(-45deg) scale(0);
+    transform-origin: 50%;
+    transition: 0.35s;
+}
+.Hera_effect:hover .caption_Hera::before{
+    opacity: 1;
+    transform: translate(-50%,-50%) rotate(-45deg) scale(1);
+}
+.Hera_effect .caption_Hera h2{
+    position: absolute;
+    top: 50%; left: 50%;
+    text-align: center;
+    transform: translate3d(-50%,-50%,0) scale(1);
+    transition: 0.35s;
+}
+.Hera_effect:hover .caption_Hera h2{
+    opacity: 0;
+    transform: translate3d(-50%,-50%,0) scale(0.8);
+}
+.Hera_effect .caption_Hera p{
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 10%;
+    font-size: 121%!important;
+    line-height: 2!important;
+    transform: translate3d(-50%,-50%,0);
+}
+.Hera_effect .caption_Hera p a{
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    transition: 0.35s;
+}
+.Hera_effect:hover .caption_Hera p a{opacity: 1;}
+.Hera_effect .caption_Hera p a i{transition: 0.35s;}
+.Hera_effect .caption_Hera p a:first-child i{transform: translate3d(-60px,-60px,0);}
+.Hera_effect .caption_Hera p a:nth-child(2) i{transform: translate3d(60px,-60px,0);}
+.Hera_effect .caption_Hera p a:nth-child(3) i{transform: translate3d(-60px,60px,0);}
+.Hera_effect .caption_Hera p a:last-child i{transform: translate3d(60px,60px,0);}
+.Hera_effect:hover .caption_Hera p a i{transform: translate3d(0,0,0);}
+.Hera_effect .caption_Hera p a:hover i{opacity: 0.6;}
+/* Winston */
+.Winston_effect{
+    background: #162633!important;
+    text-align: left;
+}
+.Winston_effect > img{
+    opacity: 0.8;
+    transition: 0.35s;
+}
+.Winston_effect:hover > img{opacity: 0.45;}
+.Winston_effect .caption_Winston{height: 100%!important;}
+.Winston_effect .caption_Winston::before{
+    content: '';
+    position: absolute;
+    width: 200%; height: 100%;
+    top: 100%; left: 0;
+    background-color: rgb(255, 255, 255, 0.7);
+    opacity: 0;
+    transform: rotate(0);
+    transform-origin: 0 0;
+    transition: 0.35s;
+}
+.Winston_effect:hover .caption_Winston::before{
+    opacity: 1;
+    transform: rotate(-15deg);
+}
+.Winston_effect .caption_Winston h2{transition: 0.35s;}
+.Winston_effect:hover .caption_Winston h2{transform:translate3d(0,-20px,0);}
+.Winston_effect .caption_Winston p{
+    position: absolute;
+    bottom: 33.594px; right: 20.55px;
+}
+.Winston_effect .caption_Winston p a{
+    margin: 0 10px;
+    color: #5d504f;
+    font-size: 170%;
+}
+.Winston_effect .caption_Winston p a:hover{color: #cc6055;}
+.Winston_effect .caption_Winston p a i{
+    opacity: 0;
+    transform: translate3d(0,50px,0);
+    transition: 0.35s;
+}
+.Winston_effect:hover .caption_Winston p a i{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+.Winston_effect:hover .caption_Winston p a:first-child i{transition-delay: 0.15s;}
+.Winston_effect:hover .caption_Winston p a:nth-child(2) i{transition-delay: 0.1s;}
+.Winston_effect:hover .caption_Winston p a:last-child i{transition-delay: 0.05s;}
+/* Selena */
+.Selena_effect{
+    text-align: center!important;
+    background-color: white!important;
+}
+.Selena_effect img{
+    opacity: 0.95;
+    transform-origin: 50% 50%;
+    transition: 0.35s;
+}
+.Selena_effect:hover img{transform: scale3d(0.95,0.95,1);}
+.Selena_effect .caption_Selena{
+    text-align: center!important;
+    height: 100%!important;
+    color: white;
+}
+.Selena_effect .caption_Selena h2{
+    transform: translate3d(0,20px,0);
+    transition: 0.35s;
+}
+.Selena_effect:hover .caption_Selena h2{transform: translate3d(0,0,0);}
+.Selena_effect .caption_Selena p{
+    color: #fff;
+    opacity: 0;
+    transform: perspective(1000px) rotate3d(1,0,0,90deg);
+    transform-origin: 50% 0%;
+    transition: 0.35s;
+}
+.Selena_effect:hover .caption_Selena p{
+    opacity: 1;
+    transform: perspective(1000px) rotate3d(1,0,0,0);
+}
+/* Terry */
+.Terry_effect{background: #34495e!important;}
+.Terry_effect > img{
+    opacity: 0.85;
+    transition: 0.35s;
+}
+.Terry_effect:hover > img{opacity: 0.6;}
+.Terry_effect .caption_Terry{
+    text-align: center!important;
+    height: 100%!important;
+}
+.Terry_effect .caption_Terry::before{
+    content: '';
+    position: absolute;
+    right: 0; bottom: 0;
+    width: 200%; height: 200%;
+    border:black solid;
+    border-width: 0 70px 60px 0;
+    transition: 0.35s;
+    transform: translate3d(70px,60px,0);
+}
+.Terry_effect .caption_Terry::after{
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 200%; height: 200%;
+    border: black solid;
+    border-width: 15px 0 0 15px;
+    transition: 0.35s;
+    transform: translate3d(-15px,-15px,0);
+}
+.Terry_effect:hover .caption_Terry::before,.Terry_effect:hover .caption_Terry::after{transform: translate3d(0,0,0);}
+.Terry_effect .caption_Terry h2{
+    position: absolute;
+    bottom: 0; left: 0;
+    padding: 12px 10px;
+    width: 50%;
+    transform: translate3d(100%,0,0);
+    transition: 0.35s;
+}
+.Terry_effect:hover .caption_Terry h2{transform: translate3d(0,0,0);}
+.Terry_effect .caption_Terry p{
+    position: absolute;
+    right: 17px; top: 23px;
+    text-align: center;
+    font-size: 111%!important;
+    z-index: 99;
+}
+.Terry_effect .caption_Terry p a{
+    display: block;
+    margin-bottom: 22.2px;
+    text-decoration: none;
+    color: white;
+    transform: translate3d(90px,0,0);
+    transition: 0.35s;
+}
+.Terry_effect .caption_Terry p a:hover{color: #f3cf3f;}
+.Terry_effect:hover .caption_Terry p a{transform: translate3d(0,0,0);}
+.Terry_effect:hover .caption_Terry p a:first-child{transition-delay: 0.025s;}
+.Terry_effect:hover .caption_Terry p a:nth-child(2){transition-delay: 0.05s;}
+.Terry_effect:hover .caption_Terry p a:nth-child(3){transition-delay: 0.075s;}
+.Terry_effect:hover .caption_Terry p a:last-child{transition-delay: 0.1s;}
+/* Phoebe */
+.Phoebe_effect{background: #675983!important;}
+.Phoebe_effect > img{
+    opacity: 0.85;
+    transition: 0.35s;
+}
+.Phoebe_effect:hover > img{opacity: 0.6;}
+.Phoebe_effect .caption_Phoebe{
+    text-align: center!important;
+    height: 100%!important;
+}
+.Phoebe_effect .caption_Phoebe::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: url(triangle2.svg) no-repeat center center;
+    background-size: 100% 100%;
+    opacity: 0;
+    transform: scale3d(5,2.5,1);
+    transform-origin: 50% 50%;
+    transition: 0.35s;
+}
+.Phoebe_effect:hover .caption_Phoebe::before{
+    opacity: 0.6;
+    transform: scale3d(1,1,1);
+}
+.Phoebe_effect .caption_Phoebe h2{
+    margin-top: 30px;
+    transform: translate3d(0,40px,0);
+    transition: 0.35s;
+}
+.Phoebe_effect:hover .caption_Phoebe h2{transform: translate3d(0,0,0);}
+.Phoebe_effect .caption_Phoebe p{
+    letter-spacing: 1px;
+    font-size: 68.5%;
+    transition: 0.35s;
+}
+.Phoebe_effect .caption_Phoebe p a{
+    color: #fff;
+    font-size: 140%;
+    display: inline-block;
+    opacity: 0;
+    outline: none;
+    text-decoration: none;
+    transition: 0.35s;
+}
+.Phoebe_effect .caption_Phoebe p a:first-child{transform: translate3d(-60px,-60px,0);}
+.Phoebe_effect .caption_Phoebe p a:nth-child(2){transform: translate3d(0,60px,0);}
+.Phoebe_effect .caption_Phoebe p a:last-child{transform: translate3d(60px,-60px,0);}
+.Phoebe_effect:hover .caption_Phoebe p a{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+/* Apollo */
+.Apollo_effect{background: #3498db!important;}
+.Apollo_effect > img{
+    opacity: 0.95;
+    transform: scale3d(1.05,1.05,1);
+    transition: 0.35s;
+}
+.Apollo_effect:hover > img{
+    opacity: 0.6;
+    transform: scale(1);
+}
+.Apollo_effect .caption_Apollo{height: 100%!important;}
+.Apollo_effect .caption_Apollo::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: white;
+    opacity: 0.5;
+    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+    transition: 0.6s;
+}
+.Apollo_effect:hover .caption_Apollo::before{transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);}
+.Apollo_effect .caption_Apollo p{
+    position: absolute;
+    right: 0; bottom: 0;
+    margin: 41.1px; padding: 0 13.7px;
+    max-width: 150px;
+    border-right: 4px solid #fff;
+    text-align: right;
+    opacity: 0;
+    transition: 0.35s;
+}
+.Apollo_effect:hover .caption_Apollo p{opacity: 1;}
+/* Kira */
+.Kira_effect{
+    background: #fff!important;
+    text-align: left!important;
+}
+.Kira_effect > img{
+    transition: 0.35s;
+    opacity: 0.8;
+}
+.Kira_effect:hover > img{opacity: 0.5;}
+.Kira_effect .caption_Kira{height: 100%!important;}
+.Kira_effect .caption_Kira p{
+    position: relative;
+    padding: 45px 10px;
+    font-weight: 600;
+    font-size: 100%!important;
+    line-height: 1.5;
+    opacity: 0;
+    transition: 0.35s;
+    transform: translate3d(0,-10px,0);
+}
+.Kira_effect:hover .caption_Kira p{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+.Kira_effect .caption_Kira::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 40px; right: 40px;
+    height: 70px;
+    background-color: white;
+    opacity: 0.7;
+    transform: translateY(80px) scaleY(0.023);
+    transform-origin: 50% 0;
+    transition: 0.35s;
+}
+.Kira_effect:hover .caption_Kira::before{transform: translateY(100px) scaleY(1);}
+.Kira_effect .caption_Kira p a{
+    position: relative;
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    opacity: 1;
+    z-index: 3;
+}
+.Kira_effect .caption_Kira p a:hover{opacity: 0.6;}
+/* Steve */
+.Steve_effect{
+    z-index: auto;
+    overflow: visible!important;
+}
+.Steve_effect::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: #000;
+    box-shadow: 0 3px 30px rgba(0,0,0,0.8);
+    opacity: 0;
+    z-index: -1;
+    transition: 0.35s;
+}
+.Steve_effect:hover::before{opacity: 1;}
+.Steve_effect > img{
+    opacity: 1;
+    transform: perspective(1000px) translate3d(0,0,0);
+    transition: 0.35s;
+}
+.Steve_effect:hover > img{transform: perspective(1000px) translate3d(0,0,21px);}
+.Steve_effect .caption_Steve{
+    text-align: center!important;
+    height: 100%!important;
+    color: #2d434e!important;
+}
+.Steve_effect .caption_Steve h2{
+    padding: 7.5px; margin-top: 60px;
+    background-color: white;
+    transform: translate3d(0,-20px,0);
+    transition: 0.35s;
+}
+.Steve_effect .caption_Steve p{
+    padding: 6.850px;
+    font-weight: 800;
+    background-color: white;
+    opacity: 0;
+    transform: scale3d(0.9,0.9,1);
+    transition: 0.35s;
+}
+.Steve_effect:hover .caption_Steve p{
+    opacity: 1;
+    transform: scale3d(1,1,1);
+}
+/* Moses */
+.Moses_effect{background: linear-gradient(-45deg, #EC65B7 0%,#05E0D8 100%)!important;}
+.Moses_effect > img{
+    opacity: 0.85;
+    transition: 0.35s;
+}
+.Moses_effect:hover > img{opacity: 0.6;}
+.Moses_effect .caption_Moses{
+    text-align: center!important;
+    height: 100%!important;
+}
+.Moses_effect .caption_Moses h2{
+    padding: 20px;
+    width: 50%; height: 50%;
+    text-align: left;
+    border: 2px white solid;
+    transition: 0.35s;
+    transform: translate3d(10px,10px,0);
+}
+.Moses_effect:hover .caption_Moses h2{transform: translate3d(0,0,0);}
+.Moses_effect .caption_Moses p{
+    padding: 20px;
+    width: 50%; height: 50%;
+    text-align: right;
+    border: 2px white solid;
+    opacity: 0;
+    transform: translate3d(0,-100%,0);
+    transition: 0.35s;
+}
+.Moses_effect:hover .caption_Moses p{
+    transform: translate3d(100%,0,0);
+    opacity: 1;
+}
+/* Jazz */
+.Jazz_effect{background: linear-gradient(-45deg, #f3cf3f 0%,#f33f58 100%)!important;}
+.Jazz_effect > img{
+    opacity: 0.9;
+    transition: 0.35s;
+}
+.Jazz_effect:hover > img{
+    opacity: 0.7;
+    transform: scale3d(1.05,1.05,1);
+}
+.Jazz_effect .caption_Jazz{
+    height: 100%!important;
+    text-align: center!important;
+}
+.Jazz_effect .caption_Jazz:before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: solid white;
+    border-width: 1px 0;
+    transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+    transform-origin: 50% 50%;
+    transition: 0.35s;
+}
+.Jazz_effect:hover .caption_Jazz:before{transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);}
+.Jazz_effect .caption_Jazz h2{
+    padding-top: 26%;
+    transform: scale3d(0.8,0.8,1);
+    transition: 0.35s;
+}
+.Jazz_effect:hover .caption_Jazz h2{transform: scale3d(1,1,1);}
+.Jazz_effect .caption_Jazz p{
+    padding: 8.5px 34px;
+    opacity: 0;
+    font-size: 17px!important;
+    text-transform: none;
+    transform: scale3d(0.8,0.8,1);
+    transition: 0.35s;
+}
+.Jazz_effect:hover .caption_Jazz p{
+    opacity: 1;
+    transform: scale3d(1,1,1);
+}
+/* Ming */
+.Ming_effect{background: #030c17!important;}
+.Ming_effect > img{
+    transition: all 0.35s;
+    opacity: 0.9;
+}
+.Ming_effect:hover > img{opacity: 0.4;}
+.Ming_effect .caption_Ming{
+    height: 100%!important;
+    text-align: center!important;
+}
+.Ming_effect .caption_Ming::before{
+    content: '';
+    position: absolute;
+    top: 30px; left: 30px; right: 30px; bottom: 30px;
+    border: 2px solid white;
+    box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
+    opacity: 0;
+    transform: scale3d(1.5,1.5,1);
+    transition: 0.35s;
+}
+.Ming_effect:hover .caption_Ming::before{
+    transform: scale3d(1,1,1);
+    opacity: 1;
+}
+.Ming_effect .caption_Ming h2{
+    margin: 20% 0 10px 0;
+    transform: scale3d(1.1,1.1,1);
+    transition: 0.35s;
+}
+.Ming_effect:hover .caption_Ming h2{transform: scale3d(1,1,1);}
+.Ming_effect .caption_Ming p{
+    padding: 13.7px;
+    opacity: 0;
+    transform: scale3d(1.5,1.5,1);
+    transition: 0.35s;
+}
+.Ming_effect:hover .caption_Ming p{
+    transform: scale3d(1,1,1);
+    opacity: 1;
+}
+/* Lexi */
+.Lexi_effect{background: linear-gradient(-45deg, #000 0%,#fff 100%)!important;}
+.Lexi_effect > img{
+    margin: -10px 0 0 -10px;
+    max-width: none!important;
+    width: calc(100% + 10px);
+    opacity: 0.9;
+    transform: translate3d(10px,10px,0);
+    transition: 0.35s;
+    backface-visibility: hidden;
+}
+.Lexi_effect:hover > img{
+    opacity: 0.6;
+    transform: translate3d(0,0,0);
+}
+.Lexi_effect .caption_Lexi{height: 100%!important;}
+.Lexi_effect .caption_Lexi::before{
+    content: '';
+    position: absolute;
+    bottom: -100px; right: -100px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    border: 2px white solid;
+    box-shadow: 0 0 0 900px rgba(255,255,255,0.2);
+    transition: 0.35s;
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(0.5);
+}
+.Lexi_effect:hover .caption_Lexi::before{
+    opacity: 1;
+    transform: scale(1);
+}
+.Lexi_effect .caption_Lexi h2{
+    transform: translate3d(5px,5px,0);
+    transition: 0.35s;
+}
+.Lexi_effect:hover .caption_Lexi h2{transform: translate3d(0,0,0);}
+.Lexi_effect .caption_Lexi p{
+    position: absolute;
+    bottom: 0; right: 0;
+    padding: 0 20.55px 20.55px 0;
+    width: 140px;
+    text-align: right;
+    opacity: 0;
+    transform: translate3d(20.55px,20.55px,0);
+    transition: 0.35s;
+}
+.Lexi_effect:hover .caption_Lexi p{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+/* Duke */
+.Duke_effect{background: linear-gradient(-45deg, #34495e 0%,#cc6055 100%)!important;}
+.Duke_effect > img{
+    opacity: 0.8;
+    transition: 0.35s;
+}
+.Duke_effect:hover > img{
+    opacity: 0.1;
+    transform: scale3d(2,2,1);
+}
+.Duke_effect .caption_Duke{
+    height: 100%!important;
+    text-align: center!important;
+}
+.Duke_effect .caption_Duke h2{
+    transform: scale(0.8);
+    transform-origin: 50% 100%;
+    transition: 0.35s;
+}
+.Duke_effect:hover .caption_Duke h2{transform: scale(1);}
+.Duke_effect .caption_Duke p{
+    position: absolute;
+    left: 0; bottom: 0;
+    margin: 20px; padding: 30px;
+    border: 2px solid #fff;
+    font-size: 90%!important;
+    text-transform: none;
+    opacity: 0;
+    transform: scale(0.8);
+    transform-origin: 50% -100%;
+    transition: 0.35s;
+}
+.Duke_effect:hover .caption_Duke p{
+    transform: scale(1);
+    opacity: 1;
+}

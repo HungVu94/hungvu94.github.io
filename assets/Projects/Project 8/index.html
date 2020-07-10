@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 8</title>
+    <!-- jquery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="Project_8.css">
+    <!-- Roboto Slab Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;531;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Roboto font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Montserrat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      </head>
+      <body>
+          
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </body>
+    </html>
+</head>
+<body>
+    <!-- nav bar -->
+    <nav class="nav_bar">
+        <div class="container">
+            <a href="#page_top" class="logo"><img src="start_bootstrap_navbar-logo.svg" alt=""></a>
+            <div class="nav_bar_options">
+                <ul class="nav_bar_nav">
+                    <li class="nav_item"><a class="nav_link" href="#services">Services</a></li>
+                    <li class="nav_item"><a class="nav_link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav_item"><a class="nav_link" href="#about">About</a></li>
+                    <li class="nav_item"><a class="nav_link" href="#team">Team</a></li>
+                    <li class="nav_item"><a class="nav_link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header -->
+    <header class="heading">
+        <div class="container">
+            <div class="heading_text">Welcome To Our Studio!</div>
+            <div class="heading_text_uppercase">It's Nice To Meet You</div>
+            <a href="#services" class="btn btn-primary btn-xl heading_btn nav_link">Tell Me More</a>
+        </div>
+    </header>
+    <!-- services -->
+    <section class="page_section" id="services">
+        <div class="container">
+            <div class="section_title">
+                <h2>SERVICES</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <div class="section_content">
+                <div class="third_column">
+                    <span>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <h4>E-Commerce</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="third_column">
+                    <span>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-laptop"></i>
+                    </span>
+                    <h4>Responsive Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="third_column">
+                    <span>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-lock"></i>
+                    </span>
+                    <h4>Web Security</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio -->
+    <section class="page_section light_bg" id="portfolio">
+        <div class="container">
+            <div class="section_title">
+                <h2>portfolio</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <div class="section_content">
+                <div class="third_column">
+                    <div class="portfolio_item">
+                        <a data-modal="modal_1" href="https://blackrockdigital.github.io/startbootstrap-agency/#portfolioModal1" class="portfolio_link">
+                            <div class="portfolio_hover">
+                                <div class="portfolio_hover_content"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <img src="start_bootstrap_01-thumbnail.jpg" alt="">
+                        </a>
+                        <div class="portfolio_caption">
+                            <div class="portfolio_caption_heading">Threads</div>
+                            <div class="portfolio_caption_subheading">Illustration</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="third_column">
+                    <div class="portfolio_item">
+                        <a data-modal="modal_2" href="https://blackrockdigital.github.io/startbootstrap-agency/#portfolioModal2" class="portfolio_link">
+                            <div class="portfolio_hover">
+                                <div class="portfolio_hover_content"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <img src="start_bootstrap_02-thumbnail.jpg" alt="">
+                        </a>
+                        <div class="portfolio_caption">
+                            <div class="portfolio_caption_heading">Explore</div>
+                            <div class="portfolio_caption_subheading">Graphic Design</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="third_column">
+                    <div class="portfolio_item">
+                        <a data-modal="modal_3" href="https://blackrockdigital.github.io/startbootstrap-agency/#portfolioModal3" class="portfolio_link">
+                            <div class="portfolio_hover">
+                                <div class="portfolio_hover_content"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <img src="start_bootstrap_03-thumbnail.jpg" alt="">
+                        </a>
+                        <div class="portfolio_caption">
+                            <div class="portfolio_caption_heading">Finish</div>
+                            <div class="portfolio_caption_subheading">Identity</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="third_column">
+                    <div class="portfolio_item">
+                        <a data-modal="modal_4" href="https://blackrockdigital.github.io/startbootstrap-agency/#portfolioModal4" class="portfolio_link">
+                            <div class="portfolio_hover">
+                                <div class="portfolio_hover_content"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <img src="start_bootstrap_04-thumbnail.jpg" alt="">
+                        </a>
+                        <div class="portfolio_caption">
+                            <div class="portfolio_caption_heading">Lines</div>
+                            <div class="portfolio_caption_subheading">Branding</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="third_column">
+                    <div class="portfolio_item">
+                        <a data-modal="modal_5" href="https://blackrockdigital.github.io/startbootstrap-agency/#portfolioModal5" class="portfolio_link">
+                            <div class="portfolio_hover">
+                                <div class="portfolio_hover_content"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <img src="start_bootstrap_05-thumbnail.jpg" alt="">
+                        </a>
+                        <div class="portfolio_caption">
+                            <div class="portfolio_caption_heading">Southwest</div>
+                            <div class="portfolio_caption_subheading">Website Design</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="third_column">
+                    <div class="portfolio_item">
+                        <a data-modal="modal_6" href="https://blackrockdigital.github.io/startbootstrap-agency/#portfolioModal6" class="portfolio_link">
+                            <div class="portfolio_hover">
+                                <div class="portfolio_hover_content"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <img src="start_bootstrap_06-thumbnail.jpg" alt="">
+                        </a>
+                        <div class="portfolio_caption">
+                            <div class="portfolio_caption_heading">Window</div>
+                            <div class="portfolio_caption_subheading">Photography</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About -->
+    <section class="page_section" id="about">
+        <div class="container">
+            <div class="section_title">
+                <h2>about</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline_img"><img src="start_bootstrap_1(1).jpg" alt=""></div>
+                    <div class="timeline_content">
+                        <div class="timeline_heading">
+                            <h4>2009-2011</h4>
+                            <h4>Our Humble Beginnings</h4>
+                        </div>
+                        <div class="timeline_body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                    </div>
+                </li>
+                <li class="timeline_invert">
+                    <div class="timeline_img"><img src="start_bootstrap_2(1).jpg" alt=""></div>
+                    <div class="timeline_content">
+                        <div class="timeline_heading">
+                            <h4>March 2011</h4>
+                            <h4>An Agency is Born</h4>
+                        </div>
+                        <div class="timeline_body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline_img"><img src="start_bootstrap_3(1).jpg" alt=""></div>
+                    <div class="timeline_content">
+                        <div class="timeline_heading">
+                            <h4>December 2012</h4>
+                            <h4>Transition to Full Service</h4>
+                        </div>
+                        <div class="timeline_body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                    </div>
+                </li>
+                <li class="timeline_invert">
+                    <div class="timeline_img"><img src="start_bootstrap_4.jpg" alt=""></div>
+                    <div class="timeline_content">
+                        <div class="timeline_heading">
+                            <h4>July 2014</h4>
+                            <h4>Phase Two Expansion</h4>
+                        </div>
+                        <div class="timeline_body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                    </div>
+                </li>
+                <li class="timeline_invert">
+                    <div class="timeline_img"><h4>Be Part <br>Of Our <br> Story!</h4></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- team -->
+    <section class="page_section light_bg" id="team">
+        <div class="container">
+            <div class="section_title">
+                <h2>OUR AMAZING TEAM</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <div class="section_content">
+                <div class="third_column">
+                    <div class="team_member">
+                        <img src="start_bootstrap_1.jpg" alt="">
+                        <h4>Kay Garland</h4>
+                        <p>Lead Designer</p>
+                        <a class="btn btn-dark btn-social" href="https://blackrockdigital.github.io/startbootstrap-agency/#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social" href="https://blackrockdigital.github.io/startbootstrap-agency/#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social" href="https://blackrockdigital.github.io/startbootstrap-agency/#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="third_column">
+                    <div class="team_member">
+                        <img src="start_bootstrap_2.jpg" alt="">
+                        <h4>Larry Parker</h4>
+                        <p>Lead Marketer</p>
+                        <a class="btn btn-dark btn-social" href="https://blackrockdigital.github.io/startbootstrap-agency/#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social" href="https://blackrockdigital.github.io/startbootstrap-agency/#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social" href="https://blackrockdigital.github.io/startbootstrap-agency/#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="third_column">
+                    <div class="team_member">
+                        <img src="start_bootstrap_3.jpg" alt="">
+                        <h4>Diana Petersen</h4>
+                        <p>Lead Developer</p>
+                        <a class="btn btn-dark btn-social" href="https://blackrockdigital.github.io/startbootstrap-agency/#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social" href="https://blackrockdigital.github.io/startbootstrap-agency/#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social" href="https://blackrockdigital.github.io/startbootstrap-agency/#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="section_content">
+                <div class="one_column">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- clients -->
+    <div class="clients">
+        <div class="container">
+            <div class="section_content">
+                <div class="fourth_column"><a href="https://blackrockdigital.github.io/startbootstrap-agency/#!"><img src="start_bootstrap_envato.jpg" alt=""></a></div>
+                <div class="fourth_column"><a href="https://blackrockdigital.github.io/startbootstrap-agency/#!"><img src="start_bootstrap_designmodo.jpg" alt=""></a></div>
+                <div class="fourth_column"><a href="https://blackrockdigital.github.io/startbootstrap-agency/#!"><img src="start_bootstrap_themeforest (1).jpg" alt=""></a></div>
+                <div class="fourth_column"><a href="https://blackrockdigital.github.io/startbootstrap-agency/#!"><img src="start_bootstrap_creative-market.jpg" alt=""></a></div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <section class="page_section" id="contact">
+        <div class="container">
+            <div class="section_title">
+                <h2>CONTACT US</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <form action="file:///D:/Visual%20studio%20code/Frontend/Study/Jquery/Basis/Project_8.html?#" id="contactForm" name="sentMessage" novalidate="novalidate">
+                <div class="section_content item_stretch">
+                    <div class="two_column">
+                        <div class="form">
+                            <input id="name" type="text" placeholder="Your Name *" required>
+                            <div class="name_alert"><ul><li>Please enter your name.</li></ul></div>
+                        </div>
+                        <div class="form">
+                            <input id="email" type="email" placeholder="Your Email *" required>
+                            <div class="email_alert"><ul><li>Please enter your email address.</li></ul></div>
+                        </div>
+                        <div class="form">
+                            <input id="phone" type="tel" placeholder="Your Phone *" required>
+                            <div class="phone_alert"><ul><li>Please enter your phone number.</li></ul></div>
+                        </div>
+                    </div>
+                    <div class="two_column">
+                        <div class="form form_message">
+                            <textarea id="message" placeholder="Your Message *" required></textarea>
+                            <div class="message_alert"><ul><li>Please enter a message.</li></ul></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit_btn"><button class="btn btn-primary btn-xl" type="submit" value="Submit">Send Message</button></div>
+            </form>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="section_content">
+                <div class="third_column">Copyright © Your Website 2020</div>
+                <div class="third_column">
+                    <a class="btn btn-dark btn-social" href="https://blackrockdigital.github.io/startbootstrap-agency/#!"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social" href="https://blackrockdigital.github.io/startbootstrap-agency/#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social" href="https://blackrockdigital.github.io/startbootstrap-agency/#!"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="third_column">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- modals -->
+    <!-- modal 1 -->
+    <div class="modal_portfolio" id="modal_1">
+        <div class="modal_background"></div>
+        <div class="modal_container">
+            <div class="modal_content">
+                <div class="close_modal"><img src="close-icon.svg" alt=""></div>
+                <div class="container">
+                    <div class="section_content">
+                        <div class="one_column">
+                            <div class="modal_body">
+                                <h2>PROJECT NAME</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <img src="01-full.jpg" alt="">
+                                <p class="modal_desc">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list">
+                                    <li>Date: January 2020</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul>
+                                <button class="btn btn-primary">
+                                    <i class="fas fa-times"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal 2 -->
+    <div class="modal_portfolio" id="modal_2">
+        <div class="modal_background"></div>
+        <div class="modal_container">
+            <div class="modal_content">
+                <div class="close_modal"><img src="close-icon.svg" alt=""></div>
+                <div class="container">
+                    <div class="section_content">
+                        <div class="one_column">
+                            <div class="modal_body">
+                                <h2>PROJECT NAME</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <img src="02-full.jpg" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list">
+                                    <li>Date: January 2020</li>
+                                    <li>Client: Explore</li>
+                                    <li>Category: Graphic Design</li>
+                                </ul>
+                                <button class="btn btn-primary">
+                                    <i class="fas fa-times"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal 3 -->
+    <div class="modal_portfolio" id="modal_3">
+        <div class="modal_background"></div>
+        <div class="modal_container">
+            <div class="modal_content">
+                <div class="close_modal"><img src="close-icon.svg" alt=""></div>
+                <div class="container">
+                    <div class="section_content">
+                        <div class="one_column">
+                            <div class="modal_body">
+                                <h2>PROJECT NAME</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <img src="03-full.jpg" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list">
+                                    <li>Date: January 2020</li>
+                                    <li>Client: Finish</li>
+                                    <li>Category: Identity</li>
+                                </ul>
+                                <button class="btn btn-primary">
+                                    <i class="fas fa-times"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal 4 -->
+    <div class="modal_portfolio" id="modal_4">
+        <div class="modal_background"></div>
+        <div class="modal_container">
+            <div class="modal_content">
+                <div class="close_modal"><img src="close-icon.svg" alt=""></div>
+                <div class="container">
+                    <div class="section_content">
+                        <div class="one_column">
+                            <div class="modal_body">
+                                <h2>PROJECT NAME</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <img src="04-full.jpg" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list">
+                                    <li>Date: January 2020</li>
+                                    <li>Client: Lines</li>
+                                    <li>Category: Branding</li>
+                                </ul>
+                                <button class="btn btn-primary">
+                                    <i class="fas fa-times"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal 5 -->
+    <div class="modal_portfolio" id="modal_5">
+        <div class="modal_background"></div>
+        <div class="modal_container">
+            <div class="modal_content">
+                <div class="close_modal"><img src="close-icon.svg" alt=""></div>
+                <div class="container">
+                    <div class="section_content">
+                        <div class="one_column">
+                            <div class="modal_body">
+                                <h2>PROJECT NAME</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <img src="05-full.jpg" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list">
+                                    <li>Date: January 2020</li>
+                                    <li>Client: Southwest</li>
+                                    <li>Category: Website Design</li>
+                                </ul>
+                                <button class="btn btn-primary">
+                                    <i class="fas fa-times"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal 6 -->
+    <div class="modal_portfolio" id="modal_6">
+        <div class="modal_background"></div>
+        <div class="modal_container">
+            <div class="modal_content">
+                <div class="close_modal"><img src="close-icon.svg" alt=""></div>
+                <div class="container">
+                    <div class="section_content">
+                        <div class="one_column">
+                            <div class="modal_body">
+                                <h2>PROJECT NAME</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <img src="06-full.jpg" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list">
+                                    <li>Date: January 2020</li>
+                                    <li>Client: Window</li>
+                                    <li>Category: Photography</li>
+                                </ul>
+                                <button class="btn btn-primary">
+                                    <i class="fas fa-times"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Project_8.js"></script>
+</body>
+</html>

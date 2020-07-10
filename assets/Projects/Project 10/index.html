@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 10</title>
+    <!-- Jquery library google host -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- isotope -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="Project_10.css">
+    <!-- google font crimson text -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- google font roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- google font roboto slab -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="header_wrapper">
+            <nav class="menu_bar">
+                <div class="container">
+                    <!-- logo -->
+                    <div class="nav_bar_logo">
+                        <a href="http://theblog.cactusthemes.com" class="nav_bar_brand">
+                            <div class="primary_logo"><img src="cactus_logo_1.jpg" alt=""></div>
+                            <div class="sub_logo"><img src="cactus_logo.jpg" alt=""></div>
+                        </a>
+                        <div class="clear_fix" style="clear: both;"></div>
+                    </div>
+                    <!-- menu -->
+                    <div class="menu">
+                        <!-- search icon -->
+                        <div class="search_button">
+                            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                        </div>
+                        <!-- main menu -->
+                        <div class="main_menu_wrapper">
+                            <ul class="main_menu">
+                                <li class="menu_item">
+                                    <a href="http://theblog.cactusthemes.com/">Home</a>
+                                    <ul class="sub_menu">
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/">Homepage 1</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/homepage-v2/">Homepage 2</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/homepage-v3/">Homepage 3</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/homepage-v4/">Homepage 4</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/homepage-v5/">Homepage 5</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/homepage-v6/">Homepage 6</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/homepage-portfolio-1/">Portfolio 1</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/homepage-portfolio-2/">Portfolio 2</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/homepage-portfolio-3/">Portfolio 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_item">
+                                    <a href="#">Posts</a>
+                                    <ul class="sub_menu">
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/love-writing-and-sharing/">Post Layout 1</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/your-ultimate-consumers-are-your-users/">Post Layout 2</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/curabitur-ullamcorper-ultricies-nisi/">Post With Sidebar</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/aenean-vulputate-eleifend-tellus/">Gallery Layout 1</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/vivamus-elementum-semper-nisi-3/">Gallery Layout 2</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/phasellus-viverra-nulla-ut-metus-varius-laoreet/">Post With Carousel</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/etiam-ultricies-nisi-vel-augue/">Post With Photos</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/curabitur-ullamcorper-ultricies-nisi-2/">Video Post</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/etiam-sit-amet-orci-eget-eros-faucibus-tincidunt/">Audio Post</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/sed-consequat-leo-eget-bibendum-sodales-augue-velit-cursus-nunc/">Quote Post</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_item">
+                                    <a href="#">Works</a>
+                                    <ul class="sub_menu">
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/homepage-portfolio-1/">Portfolio Style 1</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/homepage-portfolio-2/">Portfolio Style 2</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/homepage-portfolio-3/">Portfolio Style 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_item">
+                                    <a href="#">Features</a>
+                                    <ul class="sub_menu">
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/shortcodes-2/">Shortcodes</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/etiam-ultricies-nisi-vel-augue/">Beautiful Light Box</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/phasellus-viverra-nulla-ut-metus-varius-laoreet/">Photo Carousel</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/contact/">Contact</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/404">404</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/ads-positions/">ADs Positions</a></li>
+                                        <li class="sub_menu_item"><a href="http://theblog.cactusthemes.com/author/huongttt/">Author</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_item catagories_menu">
+                                    <a href="#">Mega Menu</a>
+                                    <div class="sub_content">
+                                        <ul class="catagories">
+                                            <li data-catagory="magazine"><a href="http://theblog.cactusthemes.com/category/magazine/">magazine</a></li>
+                                            <li data-catagory="travel"><a href="http://theblog.cactusthemes.com/category/travel/">travel</a></li>
+                                            <li data-catagory="business"><a href="http://theblog.cactusthemes.com/category/business/">business</a></li>
+                                        </ul>
+                                        <div class="catagories_content active" id="magazine">
+                                            <div class="content_wrapper">
+                                                <div class="content_item third_column">
+                                                    <div class="img_wrap"><a href="http://theblog.cactusthemes.com/your-ultimate-consumers-are-your-users/"><img src="cactus_3.jpg" alt=""></a></div>
+                                                    <h3><a class="catagories_title" href="http://theblog.cactusthemes.com/your-ultimate-consumers-are-your-users/">THE ULTIMATE CONSUMERS</a></h3>
+                                                </div>
+                                                <div class="content_item third_column">
+                                                    <div class="img_wrap"><a href="http://theblog.cactusthemes.com/aenean-vulputate-eleifend-tellus/"><img src="cactus_7.jpg" alt=""></a></div>
+                                                    <h3><a class="catagories_title" href="http://theblog.cactusthemes.com/aenean-vulputate-eleifend-tellus/">STUDING IN THE LIBRARY</a></h3>
+                                                </div>
+                                                <div class="content_item third_column">
+                                                    <div class="img_wrap"><a href="http://theblog.cactusthemes.com/etiam-ultricies-nisi-vel-augue/"><img src="cactus_4.jpg" alt=""></a></div>
+                                                    <h3><a class="catagories_title" href="http://theblog.cactusthemes.com/etiam-ultricies-nisi-vel-augue/">BEAUTIFUL LADY IN PURPLE</a></h3>
+                                                </div>
+                                                <div class="clear_fix" style="clear: both;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="catagories_content" id="travel">
+                                            <div class="content_wrapper">
+                                                <div class="content_item third_column">
+                                                    <div class="img_wrap"><a href="http://theblog.cactusthemes.com/love-writing-and-sharing/"><img src="cactus_16.jpg" alt=""></a></div>
+                                                    <h3><a class="catagories_title" href="http://theblog.cactusthemes.com/love-writing-and-sharing/">LOVE WRITING AND SHARING</a></h3>
+                                                </div>
+                                                <div class="content_item third_column">
+                                                    <div class="img_wrap"><a href="http://theblog.cactusthemes.com/vivamus-elementum-semper-nisi-3/"><img src="cactus_17.jpg" alt=""></a></div>
+                                                    <h3><a class="catagories_title" href="http://theblog.cactusthemes.com/vivamus-elementum-semper-nisi-3/">IT IS BEYOND BLOGGING</a></h3>
+                                                </div>
+                                                <div class="content_item third_column">
+                                                    <div class="img_wrap"><a href="http://theblog.cactusthemes.com/sed-consequat-leo-eget-bibendum-sodales-augue-velit-cursus-nunc/"><img src="cactus_18.jpg" alt=""></a></div>
+                                                    <h3><a class="catagories_title" href="http://theblog.cactusthemes.com/sed-consequat-leo-eget-bibendum-sodales-augue-velit-cursus-nunc/">MORE THAN THE SEEING OF SIGHTS</a></h3>
+                                                </div>
+                                                <div class="clear_fix" style="clear: both;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="catagories_content" id="business">
+                                            <div class="content_wrapper">
+                                                <div class="content_item third_column">
+                                                    <div class="img_wrap"><a href="http://theblog.cactusthemes.com/curabitur-ullamcorper-ultricies-nisi-2/"><img src="cactus_19.jpg" alt=""></a></div>
+                                                    <h3><a class="catagories_title" href="http://theblog.cactusthemes.com/curabitur-ullamcorper-ultricies-nisi-2/">FASION FADES, ONLY STYLE REMAINS THE SAME</a></h3>
+                                                </div>
+                                                <div class="content_item third_column">
+                                                    <div class="img_wrap"><a href="http://theblog.cactusthemes.com/aenean-vulputate-eleifend-tellus-2/"><img src="cactus_20.jpg" alt=""></a></div>
+                                                    <h3><a class="catagories_title" href="http://theblog.cactusthemes.com/aenean-vulputate-eleifend-tellus-2/">DOWNTOWN NEW YORK CITY</a></h3>
+                                                </div>
+                                                <div class="content_item third_column">
+                                                    <div class="img_wrap"><a href="http://theblog.cactusthemes.com/curabitur-ullamcorper-ultricies-nisi/"><img src="cactus_21.jpg" alt=""></a></div>
+                                                    <h3><a class="catagories_title" href="http://theblog.cactusthemes.com/curabitur-ullamcorper-ultricies-nisi/">STARTUPS IS EASY</a></h3>
+                                                </div>
+                                                <div class="clear_fix" style="clear: both;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <div class="clear_fix" style="clear: both;"></div>
+                            </ul>
+                            <div class="clear_fix" style="clear: both;"></div>
+                        </div>
+                    </div>
+                    <!-- search form -->
+                    <div class="search_form">
+                        <div class="search_bar"></div>
+                        <form method="GET" action="http://theblog.cactusthemes.com">
+                            <input type="text" name="search" placeholder="Search">
+                            <input type="hidden" name="post_type" value="post">
+                        </form>
+                        <div class="close_button"></div>
+                    </div>
+                </div>
+            </nav>
+            <!-- header background -->
+            <div class="background_wrapper">
+                <div class="background_color">
+                    <div class="background_content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="text_content one_column">
+                                    <div class="text_1"><span>Hi! My name is</span></div>
+                                    <div class="text_2"><span>Michael Doe</span></div>
+                                    <div class="text_3"><span>I am an web designer, blogger and dog lover from Chicago I love sharing that is why I blog</span></div>
+                                </div>
+                                <div class="clear_fix" style="clear: both;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- body content -->
+    <div class="body_container">
+        <div class="body_wrap">
+            <div class="body_content">
+                <div class="container">
+                    <div class="row">
+                        <div class="one_column">
+                            <!-- filter -->
+                            <div class="filter">
+                                <a href="#" data-filter="item" class="filter_masonry active_masonry">all</a>
+                                <a href="#" data-filter="busines" class="filter_masonry">BUSINESS</a>
+                                <a href="#" data-filter="design" class="filter_masonry">Design</a>
+                                <a href="#" data-filter="photography" class="filter_masonry">PHOTOGRAPHY</a>
+                            </div>
+                            <!-- content -->
+                            <div class="body_items">
+                                <ul class="item_list">
+                                    <li class="photography item third_column">
+                                        <div class="item_content">
+                                            <div class="item_background"><a href="http://theblog.cactusthemes.com/project/wine-bottle/"><img src="cactus_2.jpg" alt=""></a></div>
+                                            <a href="http://theblog.cactusthemes.com/project/wine-bottle/" class="item_text">
+                                                <div class="fix_special">
+                                                    <div class="item_info"><div class="category"><span>photography</span></div></div>
+                                                    <div class="item_title">Civis Spitze!</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="photography item third_column">
+                                        <div class="item_content">
+                                            <div class="item_background"><a href="http://theblog.cactusthemes.com/project/leaving/"><img src="cactus_1.jpg" alt=""></a></div>
+                                            <a href="http://theblog.cactusthemes.com/project/leaving/" class="item_text">
+                                                <div class="fix_special">
+                                                    <div class="item_info"><div class="category"><span>photography</span></div></div>
+                                                    <div class="item_title">ItYt</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="design item third_column">
+                                        <div class="item_content">
+                                            <div class="item_background"><a href="http://theblog.cactusthemes.com/project/donec-quam-felis-ultricies-nec-pellentesque-eu-pretium-quis/"><img src="cactus_12.jpg" alt=""></a></div>
+                                            <a href="http://theblog.cactusthemes.com/project/donec-quam-felis-ultricies-nec-pellentesque-eu-pretium-quis/" class="item_text">
+                                                <div class="fix_special">
+                                                    <div class="item_info"><div class="category"><span>design</span></div></div>
+                                                    <div class="item_title">Zuri</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="design item third_column">
+                                        <div class="item_content">
+                                            <div class="item_background"><a href="http://theblog.cactusthemes.com/project/sed-fringilla-mauris-sit-amet-nibh/"><img src="cactus_5.jpg" alt=""></a></div>
+                                            <a href="http://theblog.cactusthemes.com/project/sed-fringilla-mauris-sit-amet-nibh/" class="item_text">
+                                                <div class="fix_special">
+                                                    <div class="item_info"><div class="category"><span>design</span></div></div>
+                                                    <div class="item_title">Designer Stuff</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="busines item third_column">
+                                        <div class="item_content">
+                                            <div class="item_background"><a href="http://theblog.cactusthemes.com/project/cum-sociis-natoque-penatibus-et-magnis-dis-parturient-montes/"><img src="cactus_6.jpg" alt=""></a></div>
+                                            <a href="http://theblog.cactusthemes.com/project/cum-sociis-natoque-penatibus-et-magnis-dis-parturient-montes/" class="item_text">
+                                                <div class="fix_special">
+                                                    <div class="item_info"><div class="category"><span>business</span></div></div>
+                                                    <div class="item_title">Mobile Payment</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="busines item third_column">
+                                        <div class="item_content">
+                                            <div class="item_background"><a href="http://theblog.cactusthemes.com/project/aenean-leo-ligula-porttitor-eu-consequat-vitae-eleifend-ac-enim/"><img src="cactus_11.jpg" alt=""></a></div>
+                                            <a href="http://theblog.cactusthemes.com/project/aenean-leo-ligula-porttitor-eu-consequat-vitae-eleifend-ac-enim/" class="item_text">
+                                                <div class="fix_special">
+                                                    <div class="item_info"><div class="category"><span>business</span></div></div>
+                                                    <div class="item_title">Corporate Design</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="photography item third_column">
+                                        <div class="item_content">
+                                            <div class="item_background"><a href="http://theblog.cactusthemes.com/project/maecenas-tempus-tellus-eget/"><img src="cactus_15.jpg" alt=""></a></div>
+                                            <a href="http://theblog.cactusthemes.com/project/maecenas-tempus-tellus-eget/" class="item_text">
+                                                <div class="fix_special">
+                                                    <div class="item_info"><div class="category"><span>photography</span></div></div>
+                                                    <div class="item_title">Momento</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="busines item third_column">
+                                        <div class="item_content">
+                                            <div class="item_background"><a href="http://theblog.cactusthemes.com/project/sed-consequat-leo-eget-bibendum-sodales-3/"><img src="cactus_14.jpg" alt=""></a></div>
+                                            <a href="http://theblog.cactusthemes.com/project/sed-consequat-leo-eget-bibendum-sodales-3/" class="item_text">
+                                                <div class="fix_special">
+                                                    <div class="item_info"><div class="category"><span>business</span></div></div>
+                                                    <div class="item_title">Spiel Zeug Kiste</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="photography item third_column">
+                                        <div class="item_content">
+                                            <div class="item_background"><a href="http://theblog.cactusthemes.com/project/phasellus-viverra-nulla-ut-metus-varius-laoreet/"><img src="cactus_13.jpg" alt=""></a></div>
+                                            <a href="http://theblog.cactusthemes.com/project/phasellus-viverra-nulla-ut-metus-varius-laoreet/" class="item_text">
+                                                <div class="fix_special">
+                                                    <div class="item_info"><div class="category"><span>photography</span></div></div>
+                                                    <div class="item_title">The Film Project</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="busines item third_column">
+                                        <div class="item_content">
+                                            <div class="item_background"><a href="http://theblog.cactusthemes.com/project/sed-consequat-leo-eget-bibendum-sodales-2/"><img src="cactus_10.jpg" alt=""></a></div>
+                                            <a href="http://theblog.cactusthemes.com/project/sed-consequat-leo-eget-bibendum-sodales-2/" class="item_text">
+                                                <div class="fix_special">
+                                                    <div class="item_info"><div class="category"><span>business</span></div></div>
+                                                    <div class="item_title">Civis Magazine</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="design item third_column">
+                                        <div class="item_content">
+                                            <div class="item_background"><a href="http://theblog.cactusthemes.com/project/nullam-dictum-felis-eu-pede-mollis-pretium/"><img src="cactus_9.jpg" alt=""></a></div>
+                                            <a href="http://theblog.cactusthemes.com/project/nullam-dictum-felis-eu-pede-mollis-pretium/" class="item_text">
+                                                <div class="fix_special">
+                                                    <div class="item_info"><div class="category"><span>design</span></div></div>
+                                                    <div class="item_title">Falling & Falling</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="design item third_column">
+                                        <div class="item_content">
+                                            <div class="item_background"><a href="http://theblog.cactusthemes.com/project/maecenas-tempus-tellus-eget-condimentum-rhoncus/"><img src="cactus_8.jpg" alt=""></a></div>
+                                            <a href="http://theblog.cactusthemes.com/project/maecenas-tempus-tellus-eget-condimentum-rhoncus/" class="item_text">
+                                                <div class="fix_special">
+                                                    <div class="item_info"><div class="category"><span>design</span></div></div>
+                                                    <div class="item_title">NewsPaper</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <div class="clear_fix" style="clear: both;"></div>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clear_fix" style="clear: both;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <!-- back to top button -->
+        <div class="back_to_top"><i class="fas fa-angle-up"></i></div>
+        <!-- footer content -->
+        <div class="footer_content">
+            <div class="footer_sidebar">
+                <div class="container">
+                    <div class="row">
+                        <aside class="third_column">
+                            <div class="inner_content">
+                                <h2>THE BLOG THEME</h2>
+                                <div class="text_content">
+                                    This theme is for true bloggers, photographers, artists and content creator. There are many styles to fit any of your purpose.<br><br>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos.
+                                    <div class="social_media">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                            <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <aside class="third_column">
+                            <div class="inner_content">
+                                <div class="comments">
+                                    <h2>Comments</h2>
+                                    <div class="comment_item">
+                                        <div class="comment_content"><a href="http://theblog.cactusthemes.com/etiam-ultricies-nisi-vel-augue/#comment-37">Hello, this is a comment test. You can purchase this awesome theme - THE BLOG at themeforest.com</a></div>
+                                        <div class="comment_author"><span>In <a href="http://theblog.cactusthemes.com/etiam-ultricies-nisi-vel-augue/#comment-37">BEAUTIFUL LADY IN PURPLE</a></span></div>
+                                    </div>
+                                    <div class="comment_item">
+                                        <div class="comment_content"><a href="http://theblog.cactusthemes.com/nulla-consequat-massa-quis-enim/#comment-36">And this is a reply comment in which I totally agree with you guys</a></div>
+                                        <div class="comment_author"><span>In <a href="http://theblog.cactusthemes.com/nulla-consequat-massa-quis-enim/#comment-36">FAR & AWAY</a></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <aside class="third_column">
+                            <div class="inner_content">
+                                <h2>Flickr Widget</h2>
+                                <div class="widget_content">
+                                    <div class="flickr_img"><a href="https://www.flickr.com/photos/57057024@N00/14480844790/"><img src="cactus_flickr_6.jpg" alt=""></a></div>
+                                    <div class="flickr_img"><a href="https://www.flickr.com/photos/57057024@N00/14665236604/"><img src="cactus_flickr_5.jpg" alt=""></a></div>
+                                    <div class="flickr_img"><a href="https://www.flickr.com/photos/57057024@N00/14687426933/"><img src="cactus_flickr_4.jpg" alt=""></a></div>
+                                    <div class="flickr_img"><a href="https://www.flickr.com/photos/57057024@N00/14481071107/"><img src="cactus_flickr_3.jpg" alt=""></a></div>
+                                    <div class="flickr_img"><a href="https://www.flickr.com/photos/57057024@N00/14481071137/"><img src="cactus_flickr_2.jpg" alt=""></a></div>
+                                    <div class="flickr_img"><a href="https://www.flickr.com/photos/57057024@N00/14196851426/"><img src="cactus_flickr_1.jpg" alt=""></a></div>
+                                    <div class="clear_fix" style="clear: both;"></div>
+                                    <a class="flick_link" href="http://zourbuth.com/archives/500/flickr-badges-widget-free-wordpress-plugin/">
+                                        <span>
+                                            <span>Flick</span>
+                                            <span>r</span>
+                                            Badges Widget
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </aside>
+                        <div class="clear_fix" style="clear: both;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer info -->
+        <div class="footer_info">
+            <div class="container">
+                <div class="row">
+                    <div class="border_top"></div>
+                    <div class="one_column copyright">©2015 CactusThemes.com - Beautiful and functional Wordpress Themes</div>
+                    <div class="one_column menu_footer">
+                        <div class="menu_footer_container">
+                            <ul>
+                                <li><a href="http://theblog.cactusthemes.com/">Home</a></li>
+                                <li><a href="http://theblog.cactusthemes.com/contact/">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear_fix" style="clear: both;"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="Project_10.js"></script>
+</body>
+</html>

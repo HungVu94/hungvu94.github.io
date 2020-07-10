@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic 1 - Move - Zoom - Rotate</title>
+    <link rel="stylesheet" href="Basic1_rotate_zoom_move.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap&subset=latin-ext" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>
+            Simple Stack Effects
+            <span>Some inspiration for stack interactions</span>
+        </h1>
+    </div>
+
+    <div class="container gray">
+        <h2>Simple spread</h2>
+        <button class="toggle" data-effect="simple_spread">TOGGLE EFFECT</button>
+        <div class="img_container">
+            <img src="stack_effect_3.png" alt="">
+            <img src="stack_effect_2.png" alt="">
+            <img src="stack_effect_1.png" alt="">
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Fan out</h2>
+        <button class="toggle" data-effect="fan_out">TOGGLE EFFECT</button>
+        <div class="img_container">
+            <img src="stack_effect_2.png" alt="">
+            <img src="stack_effect_3.png" alt="">
+            <img src="stack_effect_4.png" alt="">
+        </div>
+    </div>
+
+    <div class="container gray">
+        <h2>Random rotation</h2>
+        <button class="toggle" data-effect="Random_rotation">TOGGLE EFFECT</button>
+        <div class="img_container">
+            <img src="stack_effect_3.png" alt="">
+            <img src="stack_effect_1.png" alt="">
+            <img src="stack_effect_2.png" alt="">
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Side Slide</h2>
+        <button class="toggle" data-effect="Side_Slide">TOGGLE EFFECT</button>
+        <div class="img_container">
+            <img src="stack_effect_4.png" alt="" class="initial_Side_Slide_effect_1">
+            <img src="stack_effect_1.png" alt="" class="initial_Side_Slide_effect_2">
+            <img src="stack_effect_3.png" alt="">
+        </div>
+    </div>
+    
+    <div class="container gray">
+        <h2>Side Grid</h2>
+        <button class="toggle" data-effect="Side_Grid">TOGGLE EFFECT</button>
+        <div class="img_container">
+            <img src="stack_effect_1.png" alt="" class="initial_Side_Grid_effect_1">
+            <img src="stack_effect_4.png" alt="" class="initial_Side_Grid_effect_2">
+            <img src="stack_effect_3.png" alt="" class="initial_Side_Grid_effect_3">
+            <img src="stack_effect_2.png" alt="" class="initial_Side_Grid_effect_4">
+        </div>
+    </div>
+
+    <div class="container gray">
+        <h2>Peek-a-boo</h2>
+        <button class="toggle" data-effect="Peek_a_boo">TOGGLE EFFECT</button>
+        <div class="img_container">
+            <img src="stack_effect_2.png" alt="" class="initial_Peek_a_boo_effec_1">
+            <img src="stack_effect_1.png" alt="" class="initial_Peek_a_boo_effec_2">
+            <img src="stack_effect_3.png" alt="" class="initial_Peek_a_boo_effec_3">
+            <img src="stack_effect_4.png" alt="" class="initial_Peek_a_boo_effec_4">
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Preview Grid</h2>
+        <button class="toggle" data-effect="Preview_Grid">TOGGLE EFFECT</button>
+        <div class="img_container">
+            <img src="stack_effect_4.png" alt="" class="initial_Preview_Grid_effec_1">
+            <img src="stack_effect_2.png" alt="" class="initial_Preview_Grid_effec_2">
+            <img src="stack_effect_1.png" alt="" class="initial_Preview_Grid_effec_3">
+            <img src="stack_effect_3.png" alt="" class="initial_Preview_Grid_effec_4">
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Corner Grid</h2>
+        <button class="toggle" data-effect="Corner_Grid">TOGGLE EFFECT</button>
+        <div class="img_container">
+            <img src="stack_effect_3.png" alt="" class="initial_Corner_Grid_effec_1">
+            <img src="stack_effect_2.png" alt="" class="initial_Corner_Grid_effec_2">
+            <img src="stack_effect_4.png" alt="" class="initial_Corner_Grid_effec_3">
+            <img src="stack_effect_1.png" alt="" class="initial_Corner_Grid_effec_4">
+        </div>
+    </div>
+
+    <div class="container gray">
+        <h2>Bouncy Grid</h2>
+        <button class="toggle" data-effect="Bouncy_Grid">TOGGLE EFFECT</button>
+        <div class="img_container">
+            <img src="stack_effect_4.png" alt="">
+            <img src="stack_effect_2.png" alt="">
+            <img src="stack_effect_1.png" alt="">
+            <img src="stack_effect_3.png" alt="">
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Coverflow</h2>
+        <button class="toggle" data-effect="Coverflow">TOGGLE EFFECT</button>
+        <div class="img_container Coverflow_initial_effect">
+            <img src="stack_effect_3.png" alt="" class="initial_Coverflow_effec_1">
+            <img src="stack_effect_2.png" alt="" class="initial_Coverflow_effec_2">
+            <img src="stack_effect_1.png" alt="" class="initial_Coverflow_effec_3">
+            <img src="stack_effect_4.png" alt="" class="initial_Coverflow_effec_4">
+        </div>
+    </div>
+
+    <div class="container gray">
+        <h2>Leaflet</h2>
+        <button class="toggle" data-effect="Leaflet">TOGGLE EFFECT</button>
+        <div class="img_container Leaflet_initial_effect">
+            <img src="stack_effect_1.png" alt="" class="initial_Leaflet_effec_1">
+            <img src="stack_effect_4.png" alt="" class="initial_Leaflet_effec_2">
+            <img src="stack_effect_3.png" alt="" class="initial_Leaflet_effec_3">
+            <img src="stack_effect_2.png" alt="" class="initial_Leaflet_effec_4">
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Vertical spread</h2>
+        <button class="toggle" data-effect="Vertical_spread">TOGGLE EFFECT</button>
+        <div class="img_container">
+            <img src="stack_effect_2.png" alt="">
+            <img src="stack_effect_1.png" alt="">
+            <img src="stack_effect_4.png" alt="">
+            <img src="stack_effect_3.png" alt="">
+        </div>
+    </div>
+
+    <div class="container gray">
+        <h2>Elastic spread</h2>
+        <button class="toggle" data-effect="Elastic_spread">TOGGLE EFFECT</button>
+        <div class="img_container">
+            <img src="stack_effect_4.png" alt="">
+            <img src="stack_effect_2.png" alt="">
+            <img src="stack_effect_3.png" alt="">
+            <img src="stack_effect_1.png" alt="">
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Fan</h2>
+        <button class="toggle" data-effect="Fan">TOGGLE EFFECT</button>
+        <div class="img_container">
+            <img src="stack_effect_1.png" alt="" class="initial_Fan_effec_1">
+            <img src="stack_effect_2.png" alt="" class="initial_Fan_effec_2">
+            <img src="stack_effect_3.png" alt="" class="initial_Fan_effec_3">
+            <img src="stack_effect_4.png" alt="" class="initial_Fan_effec_4">
+        </div>
+    </div>
+
+    <div class="container gray">
+        <h2>Queue</h2>
+        <button class="toggle" data-effect="Queue">TOGGLE EFFECT</button>
+        <div class="img_container">
+            <img src="stack_effect_3.png" alt="" class="initial_Queue_effec_1">
+            <img src="stack_effect_1.png" alt="" class="initial_Queue_effec_2">
+            <img src="stack_effect_4.png" alt="" class="initial_Queue_effec_3">
+            <img src="stack_effect_2.png" alt="" class="initial_Queue_effec_4">
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Layers</h2>
+        <button class="toggle" data-effect="Layers">TOGGLE EFFECT</button>
+        <div class="img_container Layers_initial_effect">
+            <img src="stack_effect_4.png" alt="">
+            <img src="stack_effect_2.png" alt="">
+            <img src="stack_effect_1.png" alt="">
+            <img src="stack_effect_3.png" alt="">
+        </div>
+    </div>
+
+    <script src="Basic1_rotate_zoom_move.js"></script>
+</body>
+</html>

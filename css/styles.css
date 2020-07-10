@@ -225,6 +225,7 @@ img{
 .navbar-collapse.in{
     max-height: max-content;
     height: auto;
+    overflow-y: auto;
 }
 .collapse {
     display: none;
@@ -364,7 +365,7 @@ img{
     height: 100%;
 }
 .home-bg-slide::after{
-    content: url();
+    content: '';
     position: absolute;
     top: 0;
     left: 0;

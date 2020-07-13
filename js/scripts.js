@@ -187,4 +187,19 @@ $(document).ready(function () {
             });
         }
     };
+    // back to top
+    $("#back-top").click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
+        $("#back-top").addClass("hidden");
+    });
+    $(window).scroll(function(){
+        var page_top = $(this).scrollTop();
+        if (page_top > 0) {
+            $("#back-top").removeClass("hidden");
+        } else if (page_top == 0) {
+            $("#back-top").addClass("hidden");
+        }
+    });
 });

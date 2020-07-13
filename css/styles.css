@@ -22,6 +22,14 @@ body{
 .clearfix:after, .dl-horizontal dd:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .btn-toolbar:after, .btn-group-vertical>.btn-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after, .pager:after, .panel-body:after, .modal-footer:after, .slide-buttons::before, .slide-buttons::after  {
     clear: both;
 }
+.clear {
+    clear: both;
+    display: block;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
 a{
     text-decoration: none;
     outline: none;
@@ -910,3 +918,237 @@ strong {
     border-color: #285e8e;
 }
 /* End Downloadable Resume */
+/* Resume section */
+ul.timeline{
+    position: relative;
+    margin: 40px auto 0;
+    padding: 0 0 80px;
+    width: 100%;
+    height: auto;
+    background: url(../assets/img/timeline-bg.jpg) repeat-y scroll center center rgba(0, 0, 0, 0);
+}
+ul.timeline li.title {
+    margin: 31px auto;
+    padding: 15px 0;
+    height: 65px;
+    width: 150px;
+    color: #3C3D3D;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 3px solid #D6D6D6;
+    border-radius: 6px;
+    clear: both;
+}
+ul.timeline li.title:first-child{margin-top: 0;}
+ul.timeline li.note {
+    position: relative;
+    float: left;
+    margin: 10px 0;
+    padding: 20px;
+    width: 47.5%;
+    background: none repeat scroll 0 0 rgba(242, 242, 242, 0.1);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    z-index: 550;
+}
+.timeline .note:nth-of-type(2n) {
+    clear: right;
+    float: right;
+}
+.timeline .title + .note {
+    margin-top: -20px;
+}
+.timeline .note:hover {
+    background: none repeat scroll 0 0 #fff;
+}
+.timeline .note:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -6.8%;
+    top: 18px;
+    width: 18px;
+    height: 18px;
+    background: none repeat scroll 0 0 #e1e1e1;
+    border: 2px solid #D6D6D6;
+    border-radius: 4px;
+    z-index: 20;
+}
+.timeline .note:hover:after {
+    background: none repeat scroll 0 0 #474D5D;
+    border: 2px solid #666666;
+}
+.timeline .note:nth-of-type(2n):after {
+    left: -6.8%;
+}
+.timeline .note h4 {
+    margin: 5px 0;
+    color: #666666;
+    font-family: 'Oswald', helvetica, arial, sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+.timeline .note h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #666666;
+    font-family: 'Oswald', helvetica, arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.1;
+}
+.timeline .note p {
+    margin: 8px 0;
+    color: #999999;
+    font-size: 14px;
+    line-height: 1.6em;
+    font-weight: 300;
+}
+.timeline .note span.date {
+    color: #666666;
+    font-size: 14px;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+.timeline .note .arrow {
+    position: absolute;
+    left: auto;
+    right: -1.6%;
+    top: 20px;
+    color: rgba(242, 242, 242, 0.1);
+    font-size: 12px;
+    transform: rotate(360deg);
+    transition: all 0.5s ease 0s;
+}
+.timeline .note:nth-of-type(2n) .arrow {
+    left: -1.6%;
+    right: auto;
+    transform: rotate(180deg);
+}
+.timeline .start {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -32px;
+    padding: 13px 0;
+    width: 64px;
+    height: 64px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 3px solid #D6D6D6;
+    border-radius: 100%;
+    color: #222222;
+    font-size: 24px;
+    text-align: center;
+    clear: both;
+}
+/* End Resume section */
+/* Contact Section */
+.contact-block {
+    padding-bottom: 40px;
+}
+@media (min-width: 768px){
+.col-md-offset-3 {
+    margin-left: 25%;
+}
+}
+#contact p, #contact i{color: #FFFFFF;}
+.social-icon {
+    margin-top: 50px;
+}
+.social-icon a {
+    padding: 0 10px 20px 10px;
+    display: inline-block;
+}
+.social-icon a i{color: #FFFFFF!important;}
+.social-icon a:hover i{
+    color: #707070!important;
+}
+#contact h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    font-family: 'Oswald', helvetica, arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+.form-wrapper{display: block;}
+.form-group {
+    position: relative;
+    margin-bottom: 15px;
+    clear: both;
+}
+.form input[type="text"], .form input[type="email"], .form input[type="phone"], .form input[type="url"], .form input[type="search"], .form input[type="tel"], .form input[type="password"], .form select {
+    padding: 5px 5px 5px 10px;
+    height: 50px;
+    width: 100%;
+    color: #696969;
+    font-size: 16px;
+    font-weight: 400;
+    outline: medium none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: medium none;
+    border-radius: 4px;
+    transition: background 0.25s ease-in-out 0s;
+}
+
+.form-control {
+    display: block;
+    padding: 6px 12px;
+    width: 100%;
+    height: 34px;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.btn-trans.btn-border {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background 0.25s ease-in-out 0s;
+}
+.btn-trans.btn-border:hover{
+    background-color: #fff;
+    color: #3B3F50;;
+}
+/* End Contact Section */
+/* Back to top */
+#back-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    padding-top: 5px;
+    text-align: center;
+    line-height: 40px;
+    background: #1e1e1e;
+    color: #fff;
+    border-radius: 4px;
+    opacity: 0.5;
+    z-index: 100;
+}
+#back-top:hover{opacity: 1;}
+#back-top.hidden{
+    opacity: 0;
+    visibility: hidden;
+}

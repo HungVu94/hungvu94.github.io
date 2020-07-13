@@ -416,7 +416,7 @@ li.home-bg-slide:last-child{background-image: url(../assets/img/slide2.jpg);}
     transition: 0.4s;
     z-index: 2;
 }
-.home-bg:hover + .slide-buttons{
+.home-bg:hover + .slide-buttons, .slide-buttons:hover{
     opacity: 1;
     visibility: visible;
 }

@@ -66,7 +66,7 @@ $(document).ready(function () {
         $("li.home-bg-slide:first-child").addClass("active-slide");
     };
     // scrolling to section for menu
-    $("#my-nav a").on('click', function(event) {
+    $("a.section-nav").on('click', function(event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
         // Prevent default anchor click behavior
